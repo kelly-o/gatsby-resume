@@ -6,6 +6,7 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 import ContactDetails from "../components/contactDetails"
 import Section from "../components/section"
+import TitleAndBullets from "../components/titleAndBullets"
 
 let contactDetailsData = {
   phoneNumber: "+91-9871269578",
@@ -43,18 +44,37 @@ let educationSection = { title: "Education", subSections: educationSubsections }
 
 let sections = [experienceSection, educationSection]
 
+let publicAppearancesAndWriting = [
+  "🎤 iOSCon 2019"
+]
+
+let publicStuffSection = { title: "Public appearances and stuff I've written", bullets: publicAppearancesAndWriting }
+
+let ossProjectBullets = [
+  "I felt most implementations of libraries that tried to \"intelligently\" diff tableViews such as IGListKit, RxDataSources or ReactiveLists were too heavy- handed / tightly coupled to UIKit so I wrote my own 40 line implelmentation. As a-not-so-unexpected side effect, this also works with AsyncDisplayKit/Texture",
+  "Phoenix elixir websocket cache",
+  "resume app including this"
+]
+
+let ossSection = { title: "PERSONAL & OPEN SOURCE PROJECTS", bullets: ossProjectBullets }
+
+let bulletSections = [publicStuffSection, ossSection]
+
 // <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
 // </div> 
 const IndexPage = () => (
   <>
     <ContactDetails phoneNumber={contactDetailsData.phoneNumber} email={contactDetailsData.email} />
     <SEO title="Robin Malhotra's résumé" keywords={[`Robin Malhotra`, `iOS Developer`, `resume`, `résumé`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
     {sections.map((section) => {
       return (
         <Section title={section.title} subSections={section.subSections} />
+      )
+    })}
+
+    {bulletSections.map((bulletSection) => {
+      return (
+        <TitleAndBullets title={bulletSection.title} bullets={bulletSection.bullets} />
       )
     })}
   </>
