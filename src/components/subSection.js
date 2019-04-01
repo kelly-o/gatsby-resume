@@ -1,16 +1,19 @@
 import React from "react"
 import MarkdowneyBullet from "./markdowneyBullet"
 
-class ExperiencePoint extends React.Component {
+class SubSection extends React.Component {
   render() {
-    let { bullets, companyName, designation, dates } = this.props.data
+    let { bullets, heading, location, subtitle, dates } = this.props.data
     return (
       <>
         <h3>
-          {companyName}
+          {heading}
         </h3>
         <div>
-          {designation}
+          {subtitle}
+        </div>
+        <div>
+          {location}
         </div>
         <div>
           {dates}
@@ -26,4 +29,4 @@ class ExperiencePoint extends React.Component {
   }
 }
 
-export default ExperiencePoint
+export default SubSection
