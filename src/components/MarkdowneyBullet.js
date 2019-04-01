@@ -4,13 +4,11 @@ import remark2react from 'remark-react'
 
 class MarkdowneyBullet extends React.Component {
   render() {
-    return (<div>
-      {
-        remark()
-          .use(remark2react)
-          .processSync(this.props.text).contents
-      }
-    </div>)
+    return (
+      remark()
+        .use(remark2react)
+        .processSync(this.props.text).contents
+    )
   }
 }
 
