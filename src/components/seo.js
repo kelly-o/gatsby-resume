@@ -81,7 +81,6 @@ function SEO({ description, lang, meta, keywords, title }) {
           .concat(meta)
       }
     >
-      <link rel="stylesheet" href="./print.css" type="text/css" media="print" />
     </Helmet>
   )
 }
