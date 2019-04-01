@@ -12,7 +12,7 @@ class ContactDetails extends React.Component {
           <div className="phone">
             <a href={"tel:" + phoneNumber}>{phoneNumber}</a>
           </div>
-          |
+          <span>|</span>
           <div className="email">
             <a href={"mailto:" + email}>{email}</a>
           </div>

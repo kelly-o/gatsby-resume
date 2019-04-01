@@ -6,7 +6,7 @@ class TitleAndBullets extends React.Component {
     let bullets = this.props.bullets
     let title = this.props.title
     return (
-      <>
+      <div className="titleAndBullets">
         <h1 className="sectionHeader">{title}</h1>
         <ul>
           {bullets.map((bullet) => {
@@ -15,7 +15,7 @@ class TitleAndBullets extends React.Component {
             )
           })}
         </ul>
-      </>
+      </div>
     )
   }
 }

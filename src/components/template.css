@@ -2,7 +2,7 @@ a {
    color: #1A8CDC; 
 }
 .resume {
-    max-width: 600px;
+    max-width: 800px;
     align-items: stretch;
     flex-direction: column
 }
@@ -48,6 +48,7 @@ ul
     font-size: 2em;
     padding-bottom: 0.3em;
     font-weight: 800;
+    line-height: 1.1em;
 }
 section
 {
@@ -58,10 +59,6 @@ section
     display: flex;
     justify-content:space-between;
     align-items: center
-}
-.rightCol
-{
-    min-width: 70%
 }
 ul
 {
@@ -74,32 +71,42 @@ p {
 }
 @media screen and (max-width: 1024px) and (min-width: 500px)
 {
-    body
-    {
-        margin: 1in;
+    body {
+        margin: 16px 32px 16px 32px;
     }
-	li
-	{
-		font-size: 1.2em;
-	}
-    button
-    {
-        margin: 10px;
+    .resume {
+        margin: 0;
     }
 }
-@media screen and (max-width: 500px)
+@media screen and (max-width: 1024px)
 {
-    body
-    {
-        margin: 10px;
+    .centeredFlex {
+        flex-direction: column
     }
-	li
-	{
-		font-size: 1.4em;
-	}
-     button
-    {
-        margin: 5px;
-        padding: 5px;
+    .centeredFlex span {
+        display: none
+    }
+    .contactDetails h1 {
+        text-align: center;
+        line-height: 1.1em;
+    }
+    body {
+        margin: 8px 16px 8px 16px;
+    }
+    .resume {
+        margin: 0;
+    }
+}
+
+@media print {
+    body {
+        margin: 0.5in 1in 0.5in 1in;
+    }
+    .resume {
+        margin: 0px;
+    }
+    /* Page layout */
+    .se {
+        margin-bottom: 1em;
     }
 }
