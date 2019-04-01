@@ -7,7 +7,7 @@ class Section extends React.Component {
     let title = this.props.title
     return (
       <>
-        <h1>{title}</h1>
+        <h1 className="sectionHeader">{title}</h1>
         {subSections.map((subSection) => {
           return (
             <SubSection data={subSection} />

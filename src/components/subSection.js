@@ -6,17 +6,21 @@ class SubSection extends React.Component {
     let { bullets, heading, location, subtitle, dates } = this.props.data
     return (
       <>
-        <h3>
-          {heading}
-        </h3>
-        <div>
-          {subtitle}
+        <div className="separated">
+          <h3 className="subtitle">
+            {heading}
+          </h3>
+          <div>
+            {location}
+          </div>
         </div>
-        <div>
-          {location}
-        </div>
-        <div>
-          {dates}
+        <div className="separated">
+          <div>
+            {subtitle}
+          </div>
+          <div>
+            {dates}
+          </div>
         </div>
 
         <ul>

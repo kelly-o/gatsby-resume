@@ -7,7 +7,7 @@ class TitleAndBullets extends React.Component {
     let title = this.props.title
     return (
       <>
-        <h1>{title}</h1>
+        <h1 className="sectionHeader">{title}</h1>
         <ul>
           {bullets.map((bullet) => {
             return (

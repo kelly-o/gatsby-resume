@@ -1,14 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 
-// import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 import ContactDetails from "../components/contactDetails"
 import Section from "../components/section"
 import TitleAndBullets from "../components/titleAndBullets"
+import "../components/template.css"
 
 let contactDetailsData = {
+  name: "Robin Malhotra",
   phoneNumber: "+91-9871269578",
   email: "me@rmalhotra.com"
 }
@@ -27,7 +26,7 @@ let KayakoExperience = {
 }
 
 let experienceSubSections = [KayakoExperience]
-let experienceSection = { title: "Exeperience", subSections: experienceSubSections }
+let experienceSection = { title: "Experience", subSections: experienceSubSections }
 
 let IITEducation = {
   heading: "Indian Institute of Technology",
@@ -56,28 +55,30 @@ let ossProjectBullets = [
   "resume app including this"
 ]
 
-let ossSection = { title: "PERSONAL & OPEN SOURCE PROJECTS", bullets: ossProjectBullets }
+let ossSection = { title: "Personal & Open Source Projects", bullets: ossProjectBullets }
 
 let bulletSections = [publicStuffSection, ossSection]
 
 // <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
 // </div> 
 const IndexPage = () => (
-  <>
-    <ContactDetails phoneNumber={contactDetailsData.phoneNumber} email={contactDetailsData.email} />
-    <SEO title="Robin Malhotra's résumé" keywords={[`Robin Malhotra`, `iOS Developer`, `resume`, `résumé`]} />
-    {sections.map((section) => {
-      return (
-        <Section title={section.title} subSections={section.subSections} />
-      )
-    })}
+  <div className="resumeContainer" style={{ display: `flex`, flexDirection: `column`, alignItems: `center` }}>
+    <div className="resume">
+      <ContactDetails name={contactDetailsData.name} phoneNumber={contactDetailsData.phoneNumber} email={contactDetailsData.email} />
+      <SEO title="Robin Malhotra's résumé" keywords={[`Robin Malhotra`, `iOS Developer`, `resume`, `résumé`]} />
+      {sections.map((section) => {
+        return (
+          <Section title={section.title} subSections={section.subSections} />
+        )
+      })}
 
-    {bulletSections.map((bulletSection) => {
-      return (
-        <TitleAndBullets title={bulletSection.title} bullets={bulletSection.bullets} />
-      )
-    })}
-  </>
+      {bulletSections.map((bulletSection) => {
+        return (
+          <TitleAndBullets title={bulletSection.title} bullets={bulletSection.bullets} />
+        )
+      })}
+    </div>
+  </div>
 )
 
 export default IndexPage

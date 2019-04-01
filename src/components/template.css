@@ -1,0 +1,105 @@
+a {
+   color: #1A8CDC; 
+}
+.resume {
+    max-width: 600px;
+    align-items: stretch;
+    flex-direction: column
+}
+.centeredFlex
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.centeredFlex div
+{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.subtitle {
+    margin: 0;
+}
+.contactDetails
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body
+{
+    font-family: system, -apple-system, BlinkMacSystemFont,
+        "Helvetica Neue", "Lucida Grande", "Roboto", "Segoe";
+        /*font-family: "Helvetica"*/
+    margin: 1in 2in;
+    line-height: 1.5em;
+    font-size: 11pt;
+}
+
+ul
+{
+    padding: 0;
+    list-style-position: outside;
+    margin-left: 1em;
+}
+.sectionHeader
+{
+    border-bottom: 1px solid black;
+    font-size: 2em;
+    padding-bottom: 0.3em;
+    font-weight: 800;
+}
+section
+{
+    margin-bottom: 15px;
+}
+.separated
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center
+}
+.rightCol
+{
+    min-width: 70%
+}
+ul
+{
+    margin-top: 0px;
+}
+p {
+    font-size: 1em;
+    margin: 0;
+    margin-top: 2px;
+}
+@media screen and (max-width: 1024px) and (min-width: 500px)
+{
+    body
+    {
+        margin: 1in;
+    }
+	li
+	{
+		font-size: 1.2em;
+	}
+    button
+    {
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    body
+    {
+        margin: 10px;
+    }
+	li
+	{
+		font-size: 1.4em;
+	}
+     button
+    {
+        margin: 5px;
+        padding: 5px;
+    }
+}
