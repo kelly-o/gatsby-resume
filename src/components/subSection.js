@@ -7,18 +7,18 @@ class SubSection extends React.Component {
     return (
       <>
         <div className="separated">
-          <h3 className="subtitle">
+          <h3 className="sectionHeading">
             {heading}
           </h3>
-          <div>
+          <div className="location">
             {location}
           </div>
         </div>
         <div className="separated">
-          <div>
+          <div className="subtitle">
             {subtitle}
           </div>
-          <div>
+          <div className="dates">
             {dates}
           </div>
         </div>

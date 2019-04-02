@@ -18,9 +18,9 @@ let GoJekExperience = {
   location: "Bangalore, India",
   dates: "Aug 2018 to present",
   bullets: [
-    "Built an app from scratch in the video streaming space. Currently in internal alpha. Uses [Rome](https://github.com/blender/Rome/) to point to remote instances of [minio](minio.io) to cache dependencies and reduce build times to ~15 minutes(a 75% decrease). Setup CI/CD pipeline with fastlane on gitlab-ci to automatically test, build and deploy the app to Testflight. Extensively uses View Controller containement to maintain testability and avoid Massive View Controllers.",
+    "Built an app from scratch in the video streaming space. Currently in internal alpha. Uses [Rome](https://github.com/blender/Rome/) to point to remote instances of [minio](minio.io) to cache dependencies and reduce build times to ~15 minutes(a 75% decrease). Setup Continuous Integration/Continuous Deployment pipeline with fastlane on gitlab-ci to automatically test, build and deploy the app to Testflight. Extensively uses the View Controller containement API to maintain testability and avoid Massive View Controllers.",
     "Refactored internal Auth SDK and migrated to using a new backend service. Increased test coverage to **95%+** on the networking stack as well as reduced number of LoCs from 11k+ to ~3k by migrating away from VIPER to a simpler MVC pattern.",
-    "Introduced ways to automate changes to self-hosted CI machines using Tmuxinator(still working on further automating that setup)."
+    "Introduced ways to automate changes to self-hosted CI machines using Tmuxinator, instead of manually configuring CI machines."
   ]
 }
 
@@ -30,9 +30,9 @@ let KayakoExperience = {
   location: "Delhi, India",
   dates: "Aug 2016 to June 2018",
   bullets: [
-    "Built an enterprise agent app for support agents to easily communicate with customers in a chat like fashion. Consistently had a **<2% crash rate** and hundreds of satisfied enterprise users. As the app scaled, refactored bits of the app in **RxSwift** and moved some UI bits to **Texture**.",
+    "Built an enterprise agent app from scratch for support agents to easily communicate with customers in a chat like fashion. Consistently had a **<1% crash rate** and hundreds of satisfied enterprise users. As the app scaled, refactored various parts to use more idiomatic reactive patterns in **RxSwift** to increase testability and moved some parts of the UI to **Texture** to maximize performance.",
     "Also built an [Open Source SDK](https://developer.kayako.com/messenger/ios/installation/) for developers to integrate chat functionality in their apps",
-    "Maintained a legacy **Objective-C** app , reducing crashes by **50% MoM**, added iPhone X support and fixed nasty [Core Data Bugs](https://oleb.net/blog/2013/02/nsfetchedresultscontroller-documentation-bug/).",
+    "Maintained a legacy **Objective-C** app , reducing crashes by **50% MoM**, added iPhone X support and fixed a few [Core Data Bugs arising from bad indices](https://oleb.net/blog/2013/02/nsfetchedresultscontroller-documentation-bug/).",
     "Here's a [twitter moment](https://twitter.com/i/moments/969158354252763136) showing off some of the things I'm most proud of."
   ]
 }
@@ -42,11 +42,11 @@ let experienceSection = { title: "Experience", subSections: experienceSubSection
 
 let IITEducation = {
   heading: "Indian Institute of Technology",
-  subtitle: "Bachelor of Technology (Textile), Minor in Computer Science",
+  subtitle: "Bachelor of Technology (Textile Technology), Minor in Computer Science",
   location: "Delhi",
   dates: "2012-2016",
   bullets: [
-    "GPA: 8.19 on a ten point scale."
+    "GPA: 8.19/10.0"
   ]
 }
 
@@ -56,14 +56,14 @@ let educationSection = { title: "Education", subSections: educationSubsections }
 let sections = [experienceSection, educationSection]
 
 let publicAppearancesAndWriting = [
-  "🎤 I spoke at [iOSCon 2019](https://twitter.com/skillsmatter/status/1110496380508884992) about \"Cellular View Controllers\".",
+  "🎤 I spoke at [iOSCon 2019, London](https://twitter.com/skillsmatter/status/1110496380508884992) about \"Cellular View Controllers\".",
   "✍️ Wrote an article about using Texture(formerly known as AsyncDisplayKit) in iOS apps that was moderately popular and also made it to [iOS dev weekly](https://iosdevweekly.com/issues/354).",
   "🎤 I spoke at [try! Swift India](https://www.tryswift.co/events/2017/bangalore/#codeofrobin) in November 2017 on \"[Refactoring your app using Rx](https://www.youtube.com/watch?v=QB1btv-eI3Y)\".",
   "👨🏽‍💻Wrote an article on [Safely securing secret variables](https://medium.com/flawless-app-stories/secret-variables-in-xcode-and-your-ci-for-fun-and-profit-d387a50475d7) on Travis CI and Xcode. Over 1,000 \"claps\" received and has appeared in [several iOS newsletters](https://gist.github.com/codeOfRobin/71b1b16b9fa4a812e2974bb199f53ae5).",
   "I've been a [regular](https://twitter.com/swiftindiagroup/status/959671228402454528) speaker [at the](https://twitter.com/_riteshhh/status/870897530719977472) Swift India [meetups](https://twitter.com/_riteshhh/status/837902266388500480)."
 ]
 
-let publicStuffSection = { title: "Public appearances and stuff I've written", bullets: publicAppearancesAndWriting }
+let publicStuffSection = { title: "Public talks and articles I've written", bullets: publicAppearancesAndWriting }
 
 let ossProjectBullets = [
   "I'm currently working on a \"Websocket cache\" using [Phoenix](https://phoenixframework.org), partly to explore [Elixir](https://elixir-lang.org) and Functional Programming on the server side. It's still early days, but quite enjoyable.",
