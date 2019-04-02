@@ -100,7 +100,7 @@ const IndexPage = () => (
       })}
     </div>
 
-    <a className="DownloadButton"> Need a PDF? Download here </a>
+    <a className="DownloadButton" href="https://www.dropbox.com/s/1o24vryimghp6w2/Robin%20Malhotra%27s%20r%C3%A9sum%C3%A9.pdf?dl=0"> Need a PDF? Download here </a>
   </div>
 )
 
