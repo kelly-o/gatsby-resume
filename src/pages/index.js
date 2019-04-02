@@ -99,6 +99,8 @@ const IndexPage = () => (
         )
       })}
     </div>
+
+    <a className="DownloadButton"> Need a PDF? Download here </a>
   </div>
 )
 
