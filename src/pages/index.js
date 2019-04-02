@@ -100,7 +100,7 @@ const IndexPage = () => (
       })}
     </div>
 
-    <a className="DownloadButton" href="https://www.dropbox.com/s/1o24vryimghp6w2/Robin%20Malhotra%27s%20r%C3%A9sum%C3%A9.pdf?dl=0"> Need a PDF? Download here </a>
+    <p className="Footer">Made with 💛 and GatsbyJS. Need a PDF? <a className="DownloadButton" href="https://www.dropbox.com/s/1o24vryimghp6w2/Robin%20Malhotra%27s%20r%C3%A9sum%C3%A9.pdf?dl=0">Grab one here</a></p>
   </div>
 )
 
