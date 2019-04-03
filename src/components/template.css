@@ -4,7 +4,7 @@ a {
 .resume {
     max-width: 800px;
     align-items: stretch;
-    flex-direction: column
+    flex-direction: column;
 }
 .centeredFlex
 {
@@ -37,6 +37,7 @@ body
     margin: 1in 2in;
     line-height: 1.5em;
     font-size: 11pt;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 ul

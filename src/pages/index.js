@@ -20,7 +20,8 @@ let GoJekExperience = {
   bullets: [
     "Built an app from scratch in the video streaming space. Currently in internal alpha. Uses [Rome](https://github.com/blender/Rome/) to point to remote instances of [minio](minio.io) to cache dependencies and reduce build times to ~15 minutes(a 75% decrease). Setup Continuous Integration/Continuous Deployment pipeline with fastlane on gitlab-ci to automatically test, build and deploy the app to Testflight. Extensively uses the View Controller containement API to maintain testability and avoid Massive View Controllers.",
     "Refactored internal Auth SDK and migrated to using a new backend service. Increased test coverage to **95%+** on the networking stack as well as reduced number of LoCs from 11k+ to ~3k by migrating away from VIPER to a simpler MVC pattern.",
-    "Introduced ways to automate changes to self-hosted CI machines using Tmuxinator, instead of manually configuring CI machines."
+    "Introduced ways to automate changes to self-hosted CI machines using Tmuxinator, instead of manually configuring CI machines.",
+    "Explored new ways of creating dynamic scrolling UI in iOS, a topic that eventually morphed into my talk at iOSCon 2019"
   ]
 }
 
@@ -71,7 +72,7 @@ let ossProjectBullets = [
   "I'm planning on building an [iOS UI magazine](https://twitter.com/codeOfRobin/status/1097066993046278145), that showcases popular iOS UI examples and how to build them.",
   "Added [CLI support](https://github.com/JohnSundell/SwiftPlate/pulls?q=is%3Apr+is%3Aclosed+author%3AcodeOfRobin) + [Homebrew support](https://github.com/Homebrew/homebrew-core/pull/8914) to Swiftplate by John Sundell.",
   "[Refactored](https://github.com/3lvis/Networking/pull/182/) bits and bobs in a popular networking library.",
-  "Built a [NodeJS app](https://github.com/codeOfRobin/mathembed) that allows users to embed TeX equations in Medium articles.Approved by embed.ly.",
+  "Built a [NodeJS app](https://github.com/codeOfRobin/mathembed) that allows users to embed TeX equations in Medium articles.",
   "I felt most implementations of libraries that tried to \"intelligently\" diff tableViews such as [IGListKit](https://github.com/instagram/IGListKit), [RxDataSources](https://github.com/RxSwiftCommunity/RxDataSources/) or [ReactiveLists](https://github.com/plangrid/ReactiveLists/) were too heavy- handed / tightly coupled to UIKit so I wrote my own [40 line implelmentation](https://gist.github.com/codeOfRobin/99a91403d7f6545ec76bcd600de9c6be). As a-not-so-unexpected side effect, this also works with AsyncDisplayKit/Texture.",
   "Built an interaction layer between swift and OpenCV using an Objective-C++ bridging header."
 ]
@@ -100,7 +101,7 @@ const IndexPage = () => (
       })}
     </div>
 
-    <p className="Footer">Made with 💛 and GatsbyJS. Need a PDF? <a className="DownloadButton" href="https://www.dropbox.com/s/1o24vryimghp6w2/Robin%20Malhotra%27s%20r%C3%A9sum%C3%A9.pdf?dl=0">Grab one here</a></p>
+    <p className="Footer">Made with 💛 and Gatsby.js. Need a PDF? <a className="DownloadButton" href="https://www.dropbox.com/s/1o24vryimghp6w2/Robin%20Malhotra%27s%20r%C3%A9sum%C3%A9.pdf?dl=0">Grab one here</a></p>
   </div>
 )
 

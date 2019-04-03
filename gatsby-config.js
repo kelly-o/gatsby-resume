@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `iOS Developer`,
-    description: ``,
+    description: `Robin Malhotra's résumé`,
     author: `@codeOfRobin`,
   },
   plugins: [

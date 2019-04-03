@@ -69,6 +69,10 @@ function SEO({ description, lang, meta, keywords, title }) {
             name: `twitter:description`,
             content: metaDescription,
           },
+          {
+            name: `viewport`,
+            content: `width=device-width, initial-scale=1.0, viewport-fit=cover`
+          }
         ]
           .concat(
             keywords.length > 0
@@ -89,7 +93,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [],
-  description: ``,
+  description: `Robin Malhotra's résumé`,
 }
 
 SEO.propTypes = {
