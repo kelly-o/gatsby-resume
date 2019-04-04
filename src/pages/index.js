@@ -19,9 +19,9 @@ let GoJekExperience = {
   dates: "Aug 2018 to present",
   bullets: [
     "Built an app from scratch in the video streaming space. Currently in internal alpha. Uses [Rome](https://github.com/blender/Rome/) to point to remote instances of [minio](minio.io) to cache dependencies and reduce build times to ~15 minutes(a 75% decrease). Setup Continuous Integration/Continuous Deployment pipeline with fastlane on gitlab-ci to automatically test, build and deploy the app to Testflight. Extensively uses the View Controller containement API to maintain testability and avoid Massive View Controllers.",
+    "Explored new ways of creating dynamic scrolling UI in iOS, a topic that eventually morphed into my talk at iOSCon 2019",
     "Refactored internal Auth SDK and migrated to using a new backend service. Increased test coverage to **95%+** on the networking stack as well as reduced number of LoCs from 11k+ to ~3k by migrating away from VIPER to a simpler MVC pattern.",
-    "Introduced ways to automate changes to self-hosted CI machines using Tmuxinator, instead of manually configuring CI machines.",
-    "Explored new ways of creating dynamic scrolling UI in iOS, a topic that eventually morphed into my talk at iOSCon 2019"
+    "Introduced ways to automate changes to self-hosted CI machines using Tmuxinator, instead of manually configuring CI machines."
   ]
 }
 
@@ -69,17 +69,53 @@ let publicStuffSection = { title: "Public talks and articles I've written", bull
 let ossProjectBullets = [
   "I'm currently working on a \"Websocket cache\" using [Phoenix](https://phoenixframework.org), partly to explore [Elixir](https://elixir-lang.org) and Functional Programming on the server side. It's still early days, but quite enjoyable.",
   "This very résumé is built in a résumé building app I'm working on that's both WYSIWYG and mobile responsive. It's not quite shippable yet but [here's](https://twitter.com/codeOfRobin/status/969140950491713536) a sneak peek.",
-  "I'm planning on building an [iOS UI magazine](https://twitter.com/codeOfRobin/status/1097066993046278145), that showcases popular iOS UI examples and how to build them.",
+  "I'm planning on building an [iOS UI magazine](https://twitter.com/codeOfRobin/status/1097066993046278145), that showcases popular iOS UI examples and how to build them. I've previously written an article on building [stretchy headers](https://medium.com/ios-os-x-development/recreating-spotify-s-tweetbot-s-artist-album-uitableview-8488979fc3e1#.b9ynyfn50), similar to Spotify and Tweetbot",
   "Added [CLI support](https://github.com/JohnSundell/SwiftPlate/pulls?q=is%3Apr+is%3Aclosed+author%3AcodeOfRobin) + [Homebrew support](https://github.com/Homebrew/homebrew-core/pull/8914) to Swiftplate by John Sundell.",
   "[Refactored](https://github.com/3lvis/Networking/pull/182/) bits and bobs in a popular networking library.",
   "Built a [NodeJS app](https://github.com/codeOfRobin/mathembed) that allows users to embed TeX equations in Medium articles.",
   "I felt most implementations of libraries that tried to \"intelligently\" diff tableViews such as [IGListKit](https://github.com/instagram/IGListKit), [RxDataSources](https://github.com/RxSwiftCommunity/RxDataSources/) or [ReactiveLists](https://github.com/plangrid/ReactiveLists/) were too heavy- handed / tightly coupled to UIKit so I wrote my own [40 line implelmentation](https://gist.github.com/codeOfRobin/99a91403d7f6545ec76bcd600de9c6be). As a-not-so-unexpected side effect, this also works with AsyncDisplayKit/Texture.",
-  "Built an interaction layer between swift and OpenCV using an Objective-C++ bridging header."
+  "Built an [interaction layer](https://github.com/codeOfRobin/swiftopencv) between swift and OpenCV using an Objective-C++ bridging header. Also wrote a well received [article](https://medium.com/ios-os-x-development/the-fd4fcb249358) on it."
 ]
 
 let ossSection = { title: "Personal & Open Source Projects", bullets: ossProjectBullets }
 
 let bulletSections = [publicStuffSection, ossSection]
+
+let housingExperience = {
+  heading: "HOUSING.COM LABS, NEW DELHI",
+  subtitle: "iOS Intern",
+  location: "Delhi, India",
+  dates: "Aug 2015 to Nov 2015",
+  bullets: [
+    "Helped develop Pipal (an app to aid communication in apartment complexes) in Swift 2.2.",
+    "[Here](https://gfycat.com/reflectingflashydromaeosaur) are a [couple](https://gfycat.com/kindopendegu) of sneak peaks."
+  ]
+}
+
+let abgExperience = {
+  heading: "ADITYA BIRLA GROUP",
+  subtitle: "Intern",
+  location: "Bangalore, India",
+  dates: "May 2015 to July 2015",
+  bullets: [
+    "Built a Production Optimisation System to generate manufacturing schedules from factory orders and automatically send them to concerned stakeholders.",
+    "Built in Python3 using Flask, Numpy and Pandas."
+  ]
+}
+
+let paytmExperience = {
+  heading: "PAYTM, ONE 97 INC",
+  subtitle: "iOS Intern",
+  location: "Delhi, India",
+  dates: "Dec 2014 to Jan 2015",
+  bullets: [
+    "Worked on the Paytm Wallet iOS app - deals module and API integration. Built in **Objective-C** on the iOS 8 SDK.",
+    "Featured all new design and interactions to enable new user experiences, including a \"flat\" Snapchat-like navigation."
+  ]
+}
+
+let internshipSubSections = [housingExperience, abgExperience, paytmExperience]
+let internshipSection = { title: "Internships", subSections: internshipSubSections }
 
 // <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
 // </div> 
@@ -100,6 +136,8 @@ const IndexPage = () => (
         )
       })}
     </div>
+
+    <Section title={internshipSection.title} subSections={internshipSection.subSections} />
 
     <p className="Footer">Made with 💛 and Gatsby.js. Need a PDF? <a className="DownloadButton" href="https://www.dropbox.com/s/1o24vryimghp6w2/Robin%20Malhotra%27s%20r%C3%A9sum%C3%A9.pdf?dl=0">Grab one here</a></p>
   </div>
