@@ -31,7 +31,7 @@ let KayakoExperience = {
   location: "Delhi, India",
   dates: "Aug 2016 to June 2018",
   bullets: [
-    "Built an enterprise agent app from scratch for support agents to easily communicate with customers in a chat like fashion. Consistently had a **>99.5% crash-free rate** and hundreds of satisfied enterprise users. As the app scaled, refactored various parts to use more idiomatic reactive patterns in **RxSwift** to increase testability and moved some parts of the UI to **Texture** to maximize performance.",
+    "Built an enterprise agent app from scratch for support agents to easily communicate with customers in a chat like fashion. Consistently had a **>99.5% crash-free rate** and thousands of satisfied enterprise users. As the app scaled, refactored various parts to use more idiomatic reactive patterns in **RxSwift** to increase testability and moved some parts of the UI to **Texture** to maximize performance.",
     "Also built an [Open Source SDK](https://developer.kayako.com/messenger/ios/installation/) for developers to integrate chat functionality in their apps",
     "Maintained a legacy **Objective-C** app , reducing crashes by **50% MoM**. Also, added iPhone X support and fixed a few [Core Data Bugs arising from bad indices](https://oleb.net/blog/2013/02/nsfetchedresultscontroller-documentation-bug/).",
     "[This twitter moment](https://twitter.com/i/moments/969158354252763136) highlights some of the work I did for Kayako that I’m most proud of."
