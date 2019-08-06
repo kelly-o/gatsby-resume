@@ -9,6 +9,7 @@ import "../components/template.css"
 let contactDetailsData = {
   name: "Robin Malhotra",
   phoneNumber: "+91-9871269578",
+  twitter: "@codeOfRobin",
   email: "me@rmalhotra.com"
 }
 
@@ -18,10 +19,12 @@ let GoJekExperience = {
   location: "Bangalore, India",
   dates: "Aug 2018 to present",
   bullets: [
-    "Refactored internal Auth SDK and migrated to using a new backend service. Increased test coverage to **95%+** on the networking stack as well as reduced number of LoCs from 11k+ to ~3k by migrating away from VIPER to a simpler MVC pattern.",
-    "Built an app from scratch in the video streaming space. Currently in internal alpha. Uses [Rome](https://github.com/blender/Rome/) to point to remote instances of [minio](minio.io) to cache dependencies and reduce build times to ~15 minutes (a 75% decrease). Set up continuous integration/continuous deployment pipelines with fastlane on gitlab-ci to automatically test, build and deploy the app to Testflight. Extensively uses the View Controller containment API to maintain testability and avoid Massive View Controllers.",
-    "Explored new ways of creating dynamic scrolling UI in iOS, a topic that eventually morphed into my talk at iOSCon 2019.",
-    "Introduced ways to automate changes to self-hosted CI machines using Tmuxinator, instead of manually configuring CI machines."
+    "Refactored internal Auth SDK(the new version is _network layer independent_ and can be used with a range of HTTP layers like [`Alamofire`](https://github.com/Alamofire/Alamofire), [`Malibu`](https://www.github.com/hyperoslo/Malibu) and regular `URLSession`) and migrated to using a new backend service. Increased test coverage to **95%+** on the API Client as well as reduced number of LoCs from **11k+** to **~3k** by migrating away from VIPER to a simpler MVC pattern.",
+    "Built an app from start to finish in the video streaming space. Currently in internal alpha. Uses [Rome](https://github.com/blender/Rome/) to point to remote instances of [minio](minio.io) to cache dependencies and reduce build times to ~7 minutes (a **90%** decrease).",
+    "Set up continuous integration/continuous deployment pipelines  for the above app with Fastlane on Gitlab-CI to automatically test, build and deploy the app to Testflight.",
+    "The app extensively uses the View Controller containment API to maintain testability and avoid Massive View Controllers. The \"Home\" screen is dynamically laid out based on server responses, based on ideas similar to [John Sundell's talk on Backend Driven UIs](https://www.youtube.com/watch?v=ypk-72mhYBk). In addition, I've also built a \"mock\" target of the app that lets QA test layouts locally realtime by saving responses to a file and relaying those responses via a websocket server.",
+    "Explored new ways of creating dynamic scrolling UI in iOS, a topic that eventually morphed into my talk at iOSCon London, 2019.",
+    "Introduced ways to automate changes to self-hosted CI machines using Tmuxinator, instead of manually configuring CI machines individually."
   ]
 }
 
@@ -32,9 +35,9 @@ let KayakoExperience = {
   dates: "Aug 2016 to June 2018",
   bullets: [
     "Built an enterprise agent app at [Kayako](http://web.archive.org/web/20180531182225/https://www.kayako.com/) from scratch for support agents to easily communicate with customers in a chat like fashion. Consistently had a **>99.5% crash-free rate** and thousands of satisfied enterprise users. As the app scaled, refactored various parts to use more idiomatic reactive patterns in **RxSwift** to increase testability and moved some parts of the UI to **Texture** to maximize performance.",
-    "Also built an [Open Source SDK](https://developer.kayako.com/messenger/ios/installation/) for developers to integrate chat functionality in their apps",
+    "Also built an [Open Source SDK](https://developer.kayako.com/messenger/ios/installation/) for developers to integrate chat functionality in their apps.",
     "Maintained a legacy **Objective-C** app , reducing crashes by **50% MoM**. Also, added iPhone X support and fixed a few [Core Data Bugs arising from bad indices](https://oleb.net/blog/2013/02/nsfetchedresultscontroller-documentation-bug/).",
-    "[This twitter moment](https://twitter.com/i/moments/969158354252763136) highlights some of the work I did for Kayako that I’m most proud of."
+    "[This twitter moment](https://twitter.com/i/moments/969158354252763136) highlights some of the work I did for Kayako that I’m most proud of. It shows various pieces of complex form-driven UI in the app, with interactive diffing and little UI touches added for that little bit of extra delight✨"
   ]
 }
 
@@ -60,7 +63,8 @@ let publicAppearancesAndWriting = [
   "🎤 Spoke at [iOSCon 2019, London](https://twitter.com/skillsmatter/status/1110496380508884992) about \"Cellular View Controllers\".",
   "✍️ Wrote an [article](https://medium.com/flawless-app-stories/why-i-build-my-apps-using-texture-and-why-you-should-too-99587c73f278) about using Texture (formerly known as AsyncDisplayKit) in iOS apps that was moderately popular and also made it to [iOS dev weekly](https://iosdevweekly.com/issues/354).",
   "🎤 Spoke at [try! Swift India](https://www.tryswift.co/events/2017/bangalore/#codeofrobin) in November 2017 on \"[Refactoring your app using Rx](https://www.youtube.com/watch?v=QB1btv-eI3Y)\".",
-  "👨🏽‍💻 Wrote an article on [Safely securing secret variables](https://medium.com/flawless-app-stories/secret-variables-in-xcode-and-your-ci-for-fun-and-profit-d387a50475d7) on Travis CI and Xcode. Over 1,000 \"claps\" received and has appeared in [several iOS newsletters](https://gist.github.com/codeOfRobin/71b1b16b9fa4a812e2974bb199f53ae5).",
+  "👨🏽‍💻Conducted a workshop on [Advanced Unit Testing](https://mobile.twitter.com/swiftindiagroup/status/1154976781633490944) at [Swift India Conference, 2019](https://swiftindia.in/conference/2019/)",
+  "👨🏽‍💻Wrote an article on [Safely securing secret variables](https://medium.com/flawless-app-stories/secret-variables-in-xcode-and-your-ci-for-fun-and-profit-d387a50475d7) on Travis CI and Xcode. Over 1,000 \"claps\" received and has appeared in [several iOS newsletters](https://gist.github.com/codeOfRobin/71b1b16b9fa4a812e2974bb199f53ae5).",
   "[Regular](https://twitter.com/swiftindiagroup/status/959671228402454528) speaker [at the](https://twitter.com/_riteshhh/status/870897530719977472) Swift India [meetups](https://twitter.com/_riteshhh/status/837902266388500480)."
 ]
 

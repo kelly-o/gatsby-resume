@@ -17,6 +17,10 @@ class ContactDetails extends React.Component {
             <a href={"mailto:" + email}>{email}</a>
           </div>
           <span>|</span>
+          <div className="twitter">
+            < a href="https://twitter.com/codeOfRobin/" target="_blank">Twitter</a>
+          </div>
+          <span>|</span>
           <div className="linkedin">
             < a href="https://www.linkedin.com/in/robin-malhotra/" target="_blank">LinkedIn</a>
           </div>
