@@ -24,7 +24,8 @@ let GoJekExperience = {
     "Set up continuous integration/continuous deployment pipelines  for the above app with Fastlane on Gitlab-CI to automatically test, build and deploy the app to Testflight.",
     "The app extensively uses the View Controller containment API to maintain testability and avoid Massive View Controllers. The \"Home\" screen is dynamically laid out based on server responses, based on ideas similar to [John Sundell's talk on Backend Driven UIs](https://www.youtube.com/watch?v=ypk-72mhYBk). In addition, I've also built a \"mock\" target of the app that lets QA test layouts locally realtime by saving responses to a file and relaying those responses via a websocket server.",
     "Explored new ways of creating dynamic scrolling UI in iOS, a topic that eventually morphed into my talk at iOSCon London, 2019.",
-    "Introduced ways to automate changes to self-hosted CI machines using Tmuxinator, instead of manually configuring CI machines individually."
+    "Introduced ways to automate changes to self-hosted CI machines using Tmuxinator, instead of manually configuring CI machines individually.",
+    "Architected a \"Continue Watching\" feature that worked across multiple devices and used a rudimentary sync algorithm alongside a local database in the app"
   ]
 }
 
