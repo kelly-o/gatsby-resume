@@ -97,7 +97,6 @@ p {
 {
     body {
         margin: 16px 32px 16px 32px;
-        transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     }
     .resume {
         margin: 0;
@@ -117,7 +116,6 @@ p {
     }
     body {
         margin: 8px 16px 8px 16px;
-        transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     }
     .resume {
         margin: 0;
