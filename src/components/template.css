@@ -1,6 +1,26 @@
-a {
-   color: #1A8CDC; 
+:root {
+    color-scheme: light dark;
+    --subtitle-text-color: #444;
+    --border-color: #000;
+    --link-color: #017aff;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --subtitle-text-color: #999;
+        --border-color: #fff;
+        --link-color: #0984ff;
+    }
+}
+
+a {
+   color: var(--link-color); 
+}
+
+a :visited {
+    color: var(--link-color); 
+}
+
 .resume {
     max-width: 800px;
     align-items: stretch;
@@ -21,7 +41,7 @@ a {
     margin: 0;
 }
 .subtitle, .location, .dates {
-    color: #444;
+    color: var(--subtitle-text-color)
 }
 .contactDetails
 {
@@ -51,7 +71,7 @@ ul
     margin-top: 0.6em;
     margin-bottom: 0.3em;
     padding-bottom: 0.1em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--border-color);
     font-size: 2em;
     font-weight: 800;
     line-height: 1.1em;
@@ -90,7 +110,7 @@ p {
 }
 
 .Footer a {
-    color: dodgerblue;
+    color: var(--link-color)
 }
 
 @media screen and (max-width: 1100px) and (min-width: 500px)
