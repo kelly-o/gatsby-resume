@@ -2,14 +2,14 @@
     color-scheme: light dark;
     --subtitle-text-color: #444;
     --border-color: #000;
-    --link-color: #017aff;
+    --link-color: -apple-system-blue;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --subtitle-text-color: #999;
         --border-color: #fff;
-        --link-color: #0984ff;
+        --link-color: -apple-system-blue;
     }
 }
 
@@ -142,7 +142,7 @@ p {
     }
 }
 
-@media print {
+/* @media print {
     body {
         margin: 0.5in 1.0in 0.5in 1.0in;
     }
@@ -151,7 +151,28 @@ p {
     }
     @page { margin: 0; }
 
+    
+} */
+
+@media print { 
     .Footer {
         display: none;
+    }
+
+    body {
+        margin: 0.8in;
+    }
+
+    a {
+    color: #017aff
+    } 
+
+    a:visited {
+    color: #017aff
+    }
+    .resume {
+    max-width: 100%;
+    align-items: stretch;
+    flex-direction: column
     }
 }
