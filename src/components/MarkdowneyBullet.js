@@ -9,7 +9,7 @@ class MarkdowneyBullet extends React.Component {
       remark()
         .use(externalLinks, { target: "_blank" })
         .use(remark2react)
-        .processSync(this.props.text).contents
+        .processSync(this.props.text).result
     )
   }
 }
