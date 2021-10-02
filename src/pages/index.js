@@ -13,11 +13,28 @@ let contactDetailsData = {
   email: "me@rmalhotra.com"
 }
 
+let TwitterExperience = {
+  heading: "Twitter",
+  subtitle: "SWE II",
+  location: "London, United Kingdom",
+  dates: "Jan 2020 to present",
+  bullets: [
+    "Implemented a feature in the  apps to let users share [topic links](https://i.imgur.com/n84NQ8x.png) with each other across the app",
+    "Logging for [COVID-19 prompt](https://i.imgur.com/Toy7If6.png) to measure the effectiveness of search in providing trusted information on the COVID-19 pandemic",
+    "Shipped Topic cards on iOS, [much to the fanfare of some folks](https://twitter.com/jack/status/1345475499921870848?s=21)",
+    "Topic follow prompt [redesign](https://i.imgur.com/KR4l6m5.png)",
+    "Created metrics for typeahead click rates on iOS",
+    "Built the data model for [Search on Spaces Tab](https://i.imgur.com/v5fadgX.jpeg)",
+    "Built [Purple Rings on Recent Searches](https://imgur.com/a/syohXIC), a way to know if people you've recently searched for are currently on a Twitter Space",
+    "Added a [Did you find it?](https://imgur.com/a/lrLYKzn) prompt on iOS that lets users share feedback on how well search works for them"
+  ]
+}
+
 let GoJekExperience = {
   heading: "GO-JEK",
   subtitle: "Product Engineer",
   location: "Bangalore, India",
-  dates: "Aug 2018 to present",
+  dates: "Aug 2018 to Jan 2020",
   bullets: [
     "Refactored internal Auth SDK(the new version is _network layer independent_ and can be used with a range of HTTP layers like [`Alamofire`](https://github.com/Alamofire/Alamofire), [`Malibu`](https://www.github.com/hyperoslo/Malibu) and regular `URLSession`) and migrated to using a new backend service. Increased test coverage to **95%+** on the API Client as well as reduced number of LoCs from **11k+** to **~3k** by migrating away from VIPER to a simpler MVC pattern.",
     "Built an app from start to finish in the video streaming space. Currently in public beta. Uses [Rome](https://github.com/blender/Rome/) to point to remote instances of [minio](https://minio.io) to cache dependencies and reduce build times to ~7 minutes (a **90%** decrease).",
@@ -42,7 +59,7 @@ let KayakoExperience = {
   ]
 }
 
-let experienceSubSections = [GoJekExperience, KayakoExperience]
+let experienceSubSections = [TwitterExperience, GoJekExperience, KayakoExperience]
 let experienceSection = { title: "Experience", subSections: experienceSubSections }
 
 let IITEducation = {
