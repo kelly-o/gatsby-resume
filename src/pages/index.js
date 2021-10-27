@@ -59,7 +59,7 @@ let KayakoExperience = {
   ]
 }
 
-let experienceSubSections = [TwitterExperience, GoJekExperience, KayakoExperience]
+let experienceSubSections = [GoJekExperience, KayakoExperience]
 let experienceSection = { title: "Experience", subSections: experienceSubSections }
 
 let IITEducation = {
@@ -90,7 +90,7 @@ let publicStuffSection = { title: "Conference talks & articles", bullets: public
 
 let ossProjectBullets = [
   "This very résumé is built in a résumé building app I'm working on that's both WYSIWYG and mobile responsive. It's not quite shippable yet but [here's](https://twitter.com/codeOfRobin/status/969140950491713536) a sneak peek.",
-  "Currently working on a \"Websocket cache\" using [Phoenix](https://phoenixframework.org), partly to explore [Elixir](https://elixir-lang.org) and functional programming on the server side. It's still early days, but quite enjoyable.",
+  "Built a [\"Websocket cache\"](https://github.com/codeOfRobin/Napolleon) using [Phoenix](https://phoenixframework.org), partly to explore [Elixir](https://elixir-lang.org) and functional programming on the server side. It's still early days, but quite enjoyable.",
   "Added [CLI support](https://github.com/JohnSundell/SwiftPlate/pulls?q=is%3Apr+is%3Aclosed+author%3AcodeOfRobin) + [Homebrew support](https://github.com/Homebrew/homebrew-core/pull/8914) to Swiftplate by John Sundell.",
   "Built a [NodeJS app](https://github.com/codeOfRobin/mathembed) that allows users to embed TeX equations in Medium articles.",
   "Planning on building an [iOS UI magazine](https://twitter.com/codeOfRobin/status/1097066993046278145), that showcases popular iOS UI examples and how to build them. I've previously written an article on building [stretchy headers](https://medium.com/ios-os-x-development/recreating-spotify-s-tweetbot-s-artist-album-uitableview-8488979fc3e1#.b9ynyfn50), similar to Spotify and Tweetbot",
