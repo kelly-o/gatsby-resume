@@ -27,6 +27,7 @@ let TwitterExperience = {
     "Built the data model for [Search on Spaces Tab](https://i.imgur.com/v5fadgX.jpeg)",
     "Built [Purple Rings on Recent Searches](https://imgur.com/a/syohXIC), a way to know if people you've recently searched for are currently on a Twitter Space",
     "Added a [Did you find it?](https://imgur.com/a/lrLYKzn) prompt on iOS that lets users share feedback on how well search works for them",
+    "Currently leading a project on the iOS side of things, responsible for documentation, estimation, architecture, sharing progress with stakeholders etc.",
   ],
 }
 
@@ -196,7 +197,7 @@ const IndexPage = () => (
       Made with 💛 and Gatsby.js. Need a PDF?{" "}
       <a
         className="DownloadButton"
-        href="https://www.dropbox.com/s/1o24vryimghp6w2/Robin%20Malhotra%27s%20r%C3%A9sum%C3%A9.pdf?dl=0"
+        href="https://www.dropbox.com/s/t0h9nhii0b42qt8/Robin%20Malhotra.pdf?dl=0"
       >
         Grab one here
       </a>

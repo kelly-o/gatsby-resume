@@ -5,9 +5,7 @@ class ContactDetails extends React.Component {
     let { name, phoneNumber, email } = this.props
     return (
       <div className="contactDetails">
-        <h1>
-          {name}
-        </h1>
+        <h1>{name}</h1>
         <div className="centeredFlex">
           <div className="phone">
             <a href={"tel:" + phoneNumber}>{phoneNumber}</a>
@@ -18,11 +16,24 @@ class ContactDetails extends React.Component {
           </div>
           <span>|</span>
           <div className="twitter">
-            < a href="https://twitter.com/codeOfRobin/" target="_blank">Twitter</a>
+            <a href="https://twitter.com/codeOfRobin/" target="_blank">
+              Twitter
+            </a>
           </div>
           <span>|</span>
           <div className="linkedin">
-            < a href="https://www.linkedin.com/in/robin-malhotra/" target="_blank">LinkedIn</a>
+            <a
+              href="https://www.linkedin.com/in/robin-malhotra/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </div>
+          <span>|</span>
+          <div className="linkedin">
+            <a href="https://github.com/codeOfRobin" target="_blank">
+              Github
+            </a>
           </div>
         </div>
       </div>
