@@ -19,6 +19,7 @@ let TwitterExperience = {
   location: "London, United Kingdom",
   dates: "Jan 2020 to present",
   bullets: [
+    "Was an iOS engineer on the search team at twitter, responsible for adding search to various surfaces within the app",
     "Implemented a feature in the  apps to let users share [topic links](https://i.imgur.com/n84NQ8x.png) with each other across the app",
     "Logging for [COVID-19 prompt](https://i.imgur.com/Toy7If6.png) to measure the effectiveness of search in providing trusted information on the COVID-19 pandemic",
     "Shipped Topic cards on iOS, [much to the fanfare of some folks](https://twitter.com/jack/status/1345475499921870848?s=21)",
@@ -27,7 +28,7 @@ let TwitterExperience = {
     "Built the data model for [Search on Spaces Tab](https://i.imgur.com/v5fadgX.jpeg)",
     "Built [Purple Rings on Recent Searches](https://imgur.com/a/syohXIC), a way to know if people you've recently searched for are currently on a Twitter Space",
     "Added a [Did you find it?](https://imgur.com/a/lrLYKzn) prompt on iOS that lets users share feedback on how well search works for them",
-    "Currently leading a project on the iOS side of things, responsible for documentation, estimation, architecture, sharing progress with stakeholders etc.",
+    "Currently leading a yet-to-be-released project on the iOS side of things, responsible for documentation, estimation, architecture, sharing progress with stakeholders etc.",
   ],
 }
 
