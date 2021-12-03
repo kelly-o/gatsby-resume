@@ -19,11 +19,11 @@ let TwitterExperience = {
   location: "London, United Kingdom",
   dates: "Jan 2020 to present",
   bullets: [
-    "Built features on the iOS app to surface relevant Spaces/Tweets/Topics based on user interest. Includes things like [topic sharing](https://i.imgur.com/n84NQ8x.png), Logging for the [COVID-19 prompt](https://i.imgur.com/Toy7If6.png), the Topic follow prompt [redesign](https://i.imgur.com/KR4l6m5.png), topic link rendering([much to the fanfare of some folks](https://twitter.com/jack/status/1345475499921870848?s=21)) and [Space Rings on Recent Searches](https://imgur.com/a/syohXIC)",
-    "Created metrics for typeahead click rates on iOS, helping product teams prioritize fixes for typeahead and search on various parts of the app over the next 2 Quarters",
-    "Built the data model for [Search on Spaces Tab](https://i.imgur.com/v5fadgX.jpeg), driving a significant amount of traffic towards Spaces via users searching for keywords.",
+    "Built iOS features to help surface more relevant spaces, tweets, topics to users based on their interests. Features included things like [topic sharing](https://i.imgur.com/n84NQ8x.png), logging for the [COVID-19 prompt](https://i.imgur.com/Toy7If6.png), a [redesign](https://i.imgur.com/KR4l6m5.png) of the topic-follow prompt, topic link rendering([much to the fanfare of some folks](https://twitter.com/jack/status/1345475499921870848?s=21)), and [space rings on recent searches](https://imgur.com/a/syohXIC).",
+    "Created metrics for typeahead click rates on iOS, helping product teams prioritize fixes for typeahead and search on various parts of the app over next two quarters.",
+    "Built the data model for [search on spaces tab](https://i.imgur.com/v5fadgX.jpeg), driving a significant amount of traffic towards spaces via keyword searches.",
     "Added a [Did you find it?](https://imgur.com/a/lrLYKzn) prompt on iOS that lets users share feedback and gather metrics on how well search works.",
-    "Currently the sole engineer a yet-to-be-released project on the iOS side of things, responsible for documentation, estimation, architecture, sharing progress with stakeholders while still maintaining code quality and testability.",
+    "Currently the sole engineer on a yet-to-be-released iOS project. Responsible for documentation, estimation, architecture, and sharing progress with stakeholders while still maintaining code quality and testability.",
   ],
 }
 
@@ -33,10 +33,10 @@ let GoJekExperience = {
   location: "Bangalore, India",
   dates: "Aug 2018 to Jan 2020",
   bullets: [
-    "Refactored internal Auth SDK(the new version is _network layer independent_ and can be used with a range of HTTP layers like [`Alamofire`](https://github.com/Alamofire/Alamofire), [`Malibu`](https://www.github.com/hyperoslo/Malibu) and regular `URLSession`) and migrated to using a new backend service. Increased test coverage to **95%+** on the API Client as well as reduced number of LoCs from **11k+** to **~3k** by migrating away from VIPER to a simpler MVC pattern.",
+    "Refactored internal Auth SDK (the new version is _network layer independent_ and can be used with a range of HTTP layers like [`Alamofire`](https://github.com/Alamofire/Alamofire), [`Malibu`](https://www.github.com/hyperoslo/Malibu) and regular `URLSession`) and migrated to using a new backend service. Increased test coverage to **95%+** on the API Client as well as reduced number of LoCs from **11k+** to **~3k** by migrating away from VIPER to a simpler MVC pattern.",
     "Built an app from scratch in the [video streaming](https://apps.apple.com/id/app/goplay-watch-movies-series/id1445402611) space. Used [Rome](https://github.com/blender/Rome/) to point to remote instances of [minio](https://minio.io) to cache dependencies and reduce build times to ~7 minutes (a **90%** decrease).",
     "Set up continuous integration/continuous deployment pipelines  for the above app with Fastlane on Gitlab-CI to automatically test, build and deploy the app to Testflight.",
-    'The app extensively uses the View Controller containment API to maintain testability and avoid Massive View Controllers. The "Home" screen is dynamically laid out based on server responses, based on ideas similar to [John Sundell\'s talk on Backend Driven UIs](https://www.youtube.com/watch?v=ypk-72mhYBk). In addition, I\'ve also built a "mock" target of the app that lets QA test layouts locally realtime by saving responses to a file and relaying those responses via a websocket server. [Demo video](https://gfycat.com/tepidseparatedachshund)',
+    'The app extensively uses the View Controller containment API to maintain testability and avoid Massive View Controllers. The Home screen is dynamically laid out based on server responses, based on ideas similar to [John Sundell\'s talk on Backend Driven UIs](https://www.youtube.com/watch?v=ypk-72mhYBk). In addition, I\'ve also built a "mock" target of the app that lets QA test layouts locally realtime by saving responses to a file and relaying those responses via a websocket server. [Demo video](https://gfycat.com/tepidseparatedachshund)',
     // "Explored new ways of creating dynamic scrolling UI in iOS, a topic that eventually morphed into my talk at iOSCon London, 2019.",
     // "Introduced ways to automate changes to self-hosted CI machines using Tmuxinator, instead of manually configuring CI machines individually.",
     'Architected a "Continue Watching" feature that worked across multiple devices and used a rudimentary sync algorithm alongside a local database.',
@@ -44,15 +44,15 @@ let GoJekExperience = {
 }
 
 let KayakoExperience = {
-  heading: "Kayako(pre-acquisition)",
+  heading: "Kayako (pre-acquisition)",
   subtitle: "Mobile Engineer-iOS",
   location: "Delhi, India",
   dates: "Aug 2016 to June 2018",
   bullets: [
-    "Sole engineer at [Kayako](http://web.archive.org/web/20180531182225/https://www.kayako.com/). Consistently had a **>99.5% crash-free rate** and thousands of satisfied enterprise customers",
+    "Sole iOS engineer at [Kayako](http://web.archive.org/web/20180531182225/https://www.kayako.com/). Consistently had a **>99.5% crash-free rate** and thousands of satisfied enterprise customers.",
     "Also built an [Open Source SDK](https://developer.kayako.com/messenger/ios/installation/) for developers to integrate customer support via chat in their apps.",
     // "Maintained a legacy **Objective-C** app , reducing crashes by **50% MoM**. Also, added iPhone X support and fixed a few [Core Data Bugs arising from bad indices](https://oleb.net/blog/2013/02/nsfetchedresultscontroller-documentation-bug/).",
-    "[This twitter moment](https://twitter.com/i/moments/969158354252763136) highlights some of the work I did for Kayako that I’m most proud of. It shows various pieces of complex form-driven UI in the app, with lots of little UI touches added for that little bit of extra delight✨",
+    "[This twitter moment](https://twitter.com/i/moments/969158354252763136) highlights some of the work I did for Kayako that I’m most proud of. It shows various pieces of complex, form-driven UI in the app, with lots of little UI touches added for that little bit of extra delight✨",
   ],
 }
 
@@ -83,7 +83,7 @@ let sections = [experienceSection, educationSection]
 let publicAppearancesAndWriting = [
   '🎤 Spoke at [iOSCon 2019, London](https://twitter.com/skillsmatter/status/1110496380508884992) about "Cellular View Controllers".',
   "✍️ Wrote an [article](https://medium.com/flawless-app-stories/why-i-build-my-apps-using-texture-and-why-you-should-too-99587c73f278) about using Texture (formerly known as AsyncDisplayKit) in iOS apps that was moderately popular and also made it to [iOS dev weekly](https://iosdevweekly.com/issues/354).",
-  '🎤 Spoke at [try! Swift India](https://www.tryswift.co/events/2017/bangalore/#codeofrobin) in Nov\' 2017 on "[Refactoring your app with Rx](https://www.youtube.com/watch?v=QB1btv-eI3Y)".',
+  '🎤 Spoke at [try! Swift India](https://www.tryswift.co/events/2017/bangalore/#codeofrobin) in Nov 2017 on "[Refactoring your app with Rx](https://www.youtube.com/watch?v=QB1btv-eI3Y)".',
   "👨🏽‍💻Conducted a workshop on [Advanced Unit Testing](https://mobile.twitter.com/swiftindiagroup/status/1154976781633490944) at [Swift India Conf, 2019](https://swiftindia.in/conference/2019/)",
   '👨🏽‍💻Wrote an article on [Safely securing secret variables](https://medium.com/flawless-app-stories/secret-variables-in-xcode-and-your-ci-for-fun-and-profit-d387a50475d7) on Travis CI and Xcode. Over 1,000 "claps" received and has appeared in [several iOS newsletters](https://gist.github.com/codeOfRobin/71b1b16b9fa4a812e2974bb199f53ae5).',
   // "[Regular](https://twitter.com/swiftindiagroup/status/959671228402454528) speaker [at the](https://twitter.com/_riteshhh/status/870897530719977472) Swift India [meetups](https://twitter.com/_riteshhh/status/837902266388500480).",
@@ -95,8 +95,8 @@ let publicStuffSection = {
 }
 
 let ossProjectBullets = [
-  "This very résumé is built in a résumé building app I'm working on that's both WYSIWYG and mobile responsive. [Sneak peek](https://twitter.com/codeOfRobin/status/969140950491713536).",
-  'Built a ["Websocket cache"](https://github.com/codeOfRobin/Napolleon) using [Phoenix](https://phoenixframework.org), partly to explore [Elixir](https://elixir-lang.org) and functional programming on the server side. It\'s still early days, but quite enjoyable.',
+  "This resume is built in a resume-building app I'm working on that's both WYSIWYG and mobile responsive. [Sneak peek](https://twitter.com/codeOfRobin/status/969140950491713536).",
+  'Built a ["Websocket cache"](https://github.com/codeOfRobin/Napolleon) using [Phoenix](https://phoenixframework.org), partly to explore [Elixir](https://elixir-lang.org) and functional programming on the server side. It\'s still early days but quite enjoyable.',
   // "Added [CLI support](https://github.com/JohnSundell/SwiftPlate/pulls?q=is%3Apr+is%3Aclosed+author%3AcodeOfRobin) + [Homebrew support](https://github.com/Homebrew/homebrew-core/pull/8914) to Swiftplate by John Sundell.",
   // "Built a [NodeJS app](https://github.com/codeOfRobin/mathembed) that allows users to embed TeX equations in Medium articles.",
   // "Planning on building an [iOS UI magazine](https://twitter.com/codeOfRobin/status/1097066993046278145), that showcases popular iOS UI examples and how to build them. I've previously written an article on building [stretchy headers](https://medium.com/ios-os-x-development/recreating-spotify-s-tweetbot-s-artist-album-uitableview-8488979fc3e1#.b9ynyfn50), similar to Spotify and Tweetbot",
