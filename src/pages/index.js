@@ -1,5 +1,5 @@
-import React from "react"
 
+import React from "react"
 import SEO from "../components/seo"
 import ContactDetails from "../components/contactDetails"
 import Section from "../components/section"
@@ -19,11 +19,23 @@ let TwitterExperience = {
   location: "London, United Kingdom",
   dates: "Jan 2020 to present",
   bullets: [
-    "Built iOS features to help surface more relevant spaces, tweets, topics to users based on their interests. Features included things like [topic sharing](https://i.imgur.com/n84NQ8x.png), logging for the [COVID-19 prompt](https://i.imgur.com/Toy7If6.png), a [redesign](https://i.imgur.com/KR4l6m5.png) of the topic-follow prompt, topic link rendering([much to the fanfare of some folks](https://twitter.com/jack/status/1345475499921870848?s=21)), and [space rings on recent searches](https://imgur.com/a/syohXIC).",
-    "Created metrics for typeahead click rates on iOS, helping product teams prioritize fixes for typeahead and search on various parts of the app over next two quarters.",
-    "Built the data model for [search on spaces tab](https://i.imgur.com/v5fadgX.jpeg), driving a significant amount of traffic towards spaces via keyword searches.",
-    "Added a [Did you find it?](https://imgur.com/a/lrLYKzn) prompt on iOS that lets users share feedback and gather metrics on how well search works.",
-    "Currently the sole engineer on a yet-to-be-released iOS project. Responsible for documentation, estimation, architecture, and sharing progress with stakeholders while still maintaining code quality and testability.",
+    "Develop search features across various surfaces such as the composer, search results page, spaces, and topics. Ensure that changes are consistent with the visual design of the rest of the app, as well as with code quality and testability standards.",
+    "Collaborated closely with data science, design, backend, and a separate iOS team to deliver new search capabilities for our Spaces feature. Partnered with data science to ensure logging and metrics were collected correctly. Navigated competing architectural concerns with the other iOS team in the space. Once launched, the project drove a significant amount of traffic towards Spaces via users' keyword searches.",
+    "Drove a product quality investigation into our typehead analytics in collaboration with product management and data science. Insights from my investigation helped various teams prioritize fixes for typeahead and search over next two quarters.",
+    "Stepped in to take a project over the finish line with a tight schedule and limited context. Shipped a \'Did you find it?\' prompt on iOS that lets users share feedback and gather metrics on their search experience.",
+    "Successfully advocated for the adoption of continuous corners in the Twitter cards interface.",
+    "Currently driving a yet-to-be-released project as the sole iOS engineer. Responsible for communicating across product and design with documentation, proposals, estimation, and delivery outcomes.",
+
+    
+
+
+
+
+   // "Built iOS features to help surface more relevant spaces, tweets, topics to users based on their interests. Features included things like [topic sharing](https://i.imgur.com/n84NQ8x.png), logging for the [COVID-19 prompt](https://i.imgur.com/Toy7If6.png), a [redesign](https://i.imgur.com/KR4l6m5.png) of the topic-follow prompt, topic link rendering([much to the fanfare of some folks](https://twitter.com/jack/status/1345475499921870848?s=21)), and [space rings on recent searches](https://imgur.com/a/syohXIC).",
+    //"Created metrics for typeahead click rates on iOS, helping product teams prioritize fixes for typeahead and search on various parts of the app over next two quarters.",
+    //"Built the data model for [search on spaces tab](https://i.imgur.com/v5fadgX.jpeg), driving a significant amount of traffic towards spaces via keyword searches.",
+    //"Added a [Did you find it?](https://imgur.com/a/lrLYKzn) prompt on iOS that lets users share feedback and gather metrics on how well search works.",
+    //"Currently the sole engineer on a yet-to-be-released iOS project. Responsible for documentation, estimation, architecture, and sharing progress with stakeholders while still maintaining code quality and testability.",
   ],
 }
 
